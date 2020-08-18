@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		D89BF43924EBD2D10031F58A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D89BF43824EBD2D10031F58A /* main.cpp */; };
+		D89BF44624EBDC740031F58A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D89BF44524EBDC740031F58A /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D89BF43324EBD2D10031F58A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		D89BF44124EBDC740031F58A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +35,19 @@
 /* Begin PBXFileReference section */
 		D89BF43524EBD2D10031F58A /* Kalman Filters Implementation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Kalman Filters Implementation"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D89BF43824EBD2D10031F58A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D89BF44324EBDC740031F58A /* 1D Kalman Filter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "1D Kalman Filter"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89BF44524EBDC740031F58A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D89BF43224EBD2D10031F58A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89BF44024EBDC740031F58A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				D89BF43724EBD2D10031F58A /* Kalman Filters Implementation */,
+				D89BF44424EBDC740031F58A /* 1D Kalman Filter */,
 				D89BF43624EBD2D10031F58A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				D89BF43524EBD2D10031F58A /* Kalman Filters Implementation */,
+				D89BF44324EBDC740031F58A /* 1D Kalman Filter */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +81,14 @@
 				D89BF43824EBD2D10031F58A /* main.cpp */,
 			);
 			path = "Kalman Filters Implementation";
+			sourceTree = "<group>";
+		};
+		D89BF44424EBDC740031F58A /* 1D Kalman Filter */ = {
+			isa = PBXGroup;
+			children = (
+				D89BF44524EBDC740031F58A /* main.cpp */,
+			);
+			path = "1D Kalman Filter";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +111,23 @@
 			productReference = D89BF43524EBD2D10031F58A /* Kalman Filters Implementation */;
 			productType = "com.apple.product-type.tool";
 		};
+		D89BF44224EBDC740031F58A /* 1D Kalman Filter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D89BF44724EBDC740031F58A /* Build configuration list for PBXNativeTarget "1D Kalman Filter" */;
+			buildPhases = (
+				D89BF43F24EBDC740031F58A /* Sources */,
+				D89BF44024EBDC740031F58A /* Frameworks */,
+				D89BF44124EBDC740031F58A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "1D Kalman Filter";
+			productName = "1D Kalman Filter";
+			productReference = D89BF44324EBDC740031F58A /* 1D Kalman Filter */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +138,9 @@
 				ORGANIZATIONNAME = PavanKumar;
 				TargetAttributes = {
 					D89BF43424EBD2D10031F58A = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					D89BF44224EBDC740031F58A = {
 						CreatedOnToolsVersion = 11.6;
 					};
 				};
@@ -110,6 +159,7 @@
 			projectRoot = "";
 			targets = (
 				D89BF43424EBD2D10031F58A /* Kalman Filters Implementation */,
+				D89BF44224EBDC740031F58A /* 1D Kalman Filter */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +170,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D89BF43924EBD2D10031F58A /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89BF43F24EBDC740031F58A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D89BF44624EBDC740031F58A /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +309,22 @@
 			};
 			name = Release;
 		};
+		D89BF44824EBDC740031F58A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D89BF44924EBDC740031F58A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -268,6 +342,15 @@
 			buildConfigurations = (
 				D89BF43D24EBD2D10031F58A /* Debug */,
 				D89BF43E24EBD2D10031F58A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D89BF44724EBDC740031F58A /* Build configuration list for PBXNativeTarget "1D Kalman Filter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D89BF44824EBDC740031F58A /* Debug */,
+				D89BF44924EBDC740031F58A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
